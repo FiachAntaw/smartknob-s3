@@ -245,7 +245,7 @@ void InterfaceTask::run() {
         Wire.setClock(400000);
     #endif
     #if SK_STRAIN
-        scale.begin(38, 2);
+        scale.begin(PIN_SCALE_DO, PIN_SCALE_SCK, 64);
     #endif
 
     #if SK_ALS
